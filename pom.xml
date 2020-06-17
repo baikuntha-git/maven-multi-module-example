@@ -9,4 +9,40 @@
         <module>core</module>
         <module>app</module>
     </modules>
-</project>
+    <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+     </dependencies>
+    <scm>
+        <connection>scm:https://github.com/baikuntha-git/maven-multi-module-example.git</connection>
+        <url>https://github.com/baikuntha-git/maven-multi-module-example.git</url>
+        <developerConnection>scm:git:https://github.com/baikuntha-git/maven-multi-module-example.git</developerConnection>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+             <id>nexus</id>
+             <url>http://15.206.209.59:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+             <id>nexus</id>
+             <url>http://15.206.209.59:8081/nexus/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
+   <build>
+    <plugins>
+        <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-release-plugin</artifactId>
+			    <version>3.0.0-M1</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                <tagNameFormat>@{project.version}</tagNameFormat>
+               </configuration>
+	        </plugin>
+        </plugins>
+      </build>
+    </project>
