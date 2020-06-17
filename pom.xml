@@ -9,12 +9,6 @@
         <module>core</module>
         <module>app</module>
     </modules>
-    <dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-     </dependencies>
     <scm>
         <connection>scm:https://github.com/baikuntha-git/maven-multi-module-example.git</connection>
         <url>https://github.com/baikuntha-git/maven-multi-module-example.git</url>
