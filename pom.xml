@@ -17,26 +17,26 @@
     <distributionManagement>
         <snapshotRepository>
              <id>nexus</id>
-             <url>http://13.233.115.35:8081/nexus/content/repositories/snapshots</url>
+             <url>http://13.127.227.10:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
              <id>nexus</id>
-             <url>http://13.233.115.35:8081/nexus/content/repositories/releases</url>
+             <url>http://13.127.227.10:8081/nexus/content/repositories/releases</url>
         </repository>
     </distributionManagement>
    <build>
     <plugins>
         <plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-release-plugin</artifactId>
-			    <version>3.0.0-M1</version>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-release-plugin</artifactId>
+		<version>3.0.0-M1</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
                     <localCheckout>true</localCheckout>
                 <tagNameFormat>@{project.version}</tagNameFormat>
                </configuration>
-	        </plugin>
+	    </plugin>
         </plugins>
       </build>
     </project>
