@@ -31,6 +31,8 @@
 		<artifactId>maven-release-plugin</artifactId>
 		<version>3.0.0-M1</version>
                 <configuration>
+		    <tagBase>https://github.com/baikuntha-git/maven-multi-module-example.git/tag</tagBase>
+                     <releaseProfiles>release</releaseProfiles>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
                     <localCheckout>true</localCheckout>
