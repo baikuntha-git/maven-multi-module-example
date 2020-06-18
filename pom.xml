@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jamesward</groupId>
     <artifactId>multi</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>multi</name>
     <modules>
@@ -10,7 +10,7 @@
         <module>app</module>
     </modules>
     <scm>
-        <connection>scm:git:https://baikuntha-git:Pass1234@github.com/baikuntha-git/maven-multi-module-example.git</connection>
+        <connection>scm:git:https://${baikuntha-git}:${Pass1234}@github.com/baikuntha-git/maven-multi-module-example.git</connection>
         <url>https://github.com/baikuntha-git/maven-multi-module-example.git</url>
 	<tag>HEAD</tag>
         <developerConnection>scm:git:https://github.com/baikuntha-git/maven-multi-module-example.git</developerConnection>
